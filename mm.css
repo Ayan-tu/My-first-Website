@@ -34,15 +34,6 @@ display: flex;
 .nav-links a {
     color: red;
     text-decoration: none;
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin-right: 70px;
-display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: right;
-}
 }
 .nav-links a:hover {
     text-decoration: underline;
@@ -57,7 +48,7 @@ display: flex;
 border:1px solid #000;
 margin-top:30px;
   position:relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
 table {
     width: 100%;
