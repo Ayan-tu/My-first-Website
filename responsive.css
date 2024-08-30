@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background-color: rgb(243, 241, 239);
+    font-family: 'IBM Plex Mono', monospace;
+}
+html{
+    font-size: 90%;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    margin: 50px 50px;
+}
+.nav{
+    margin-bottom: 15px;
+}
+.nav-main .logo img{
+    width: 30%;
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-top: -15px;
+
+}
+.nav-main .nav{
+    display: flex;
+    
+}
+.nav-main .nav p{
+    position: relative;
+    top: 10px;
+    margin-left: 15px;
+    color:  rgb(17, 195, 195);
+}
+.nav-main .nav img{
+    width: 8%;
+}
+    
+.ttt{
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.ttt p{
+    font-weight: bolder;
+    font-size: 25px;
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid grey;
+    background-color: white;
+    font-family: 'Pacifico', cursive;
+    color: rgb(17, 195, 195);
+}
+button i{
+    color: rgb(17, 195, 195);
+    width:15px;
+    margin-right:5px;
+}
+.content{
+   width: 100%;
+   margin-top: 0%;
+}
+.heading{
+    display: flex;
+    padding-right: 5%;
+}
+.heading h1{
+    position: relative;
+    top: 5px;
+    height: 50px;
+}
+.heading img{
+    width:7%;
+}
+.par{
+    width:800px;
+}
+.Card-10{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    }
+.card{
+    margin: 10px;
+    padding: 15px;
+}
+.card-img img{
+    width:350px;
+    height:320px;
+    justify-content: center;
+}
+.coffe h3{
+    margin: 0px;
+    padding: 10px;
+    color: rgb(17, 195, 195);
+}
+@media only screen  and (max-width:1000px){
+  .main-container{
+    display: block;
+    margin: 30px;
+    padding: 5px;
+    width: 100px;
+  #ayn{
+    white-space: nowrap;
+  } 
+  }
+  .heading img{
+    width: 40%;
+  }
+  .nav-main{
+    display:flex;
+    gap: 50px;
+    }
+  .nav-main .nav{
+    display: block;
+    height:10px;
+    width: 100%;
+    }
+  .container{
+    display: flex;
+    gap: 80px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    }
+  .nav-main .nav{
+    width: 25px;
+    height: 50%;
+    }
+  .nav-main .nav img{
+    width: 30px;
+    }
+   .logo{
+     width:100%;
+    }
+  .nav-main .logo img{
+    width: 100px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 1px;
+    }
+  .Twitter{
+    display: none;
+   }
+   .nav p{
+    font-size: 12px;
+   }
+   .card-10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   } 
+}
+@media only screen and (max-width:800px) {
+    .nav img{
+       display: none; 
+    }
+    .card{
+        width: 340px;
+        padding-left: 0px;
+       } 
+    
+}
+@media only screen and (max-width:600px){
+body{
+    position: absolute;
+    }
+.par{
+    width: 450px;
+}
+.logo img{
+    position: relative;
+    top:100px;
+    left:380px;
+    } 
+.content{
+    margin-top: 100px;
+    left: 10px;
+    padding: 10px;
+    float: left;
+    }
+.Card-10{
+    width: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-main{
+    display: flex;
+    justify-content: center;
+    }
+.nav-main .logo img{
+    width: 100px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 10px;
+   } 
+}
