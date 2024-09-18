@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: gray;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+.nav-list li {
+    margin-left: 20px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+.nav-list a:hover {
+    color: orange;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+}
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; links initially 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%; 
+        z-index: 1;
+    }
+    .nav-list.active {
+        display: flex; 
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-image {
+    background-image: url('https://via.placeholder.com/800');
+    background-size: cover;
+    background-position: center;
+}
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        height: auto; 
+    }
+    .hero-image {
+        height: 300px;
+        width:350px;
+    }
+}
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: gray;
+    padding: 15px;
+    width: 200px; 
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+.card {
+    background-color:gray;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+.card img {
+    width: 100%; 
+    height: auto; 
+}
+.card h2 {
+    margin: 10px 0;
+}
+.card p {
+    font-size: 0.9rem;
+}
+.toggle {
+    display: none;
+}
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute; 
+        left: -250px; 
+        width: 200px;
+        height: 100%; 
+        transition: left 0.3s ease;
+    }
+    .toggle:checked + .toggle-button + .sidebar {
+        left: 0;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        padding-right: 20px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    }
+   .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style-type: none;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.icons a {
+    margin-right: 15px;
+}
+.icons a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+.icons a i {
+    margin-right: 5px;
+}
+.icons a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-section {
+        width: 100%;
+    }
+}
